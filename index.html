@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                BOOTSTRAP                                -->
+        <!-- ----------------------------------------------------------------------- -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                F-AWESOME                                -->
+        <!-- ----------------------------------------------------------------------- -->
+        <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                   CSS                                   -->
+        <!-- ----------------------------------------------------------------------- -->
+        <link rel="stylesheet" href="./css/main.css">
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                               GOOGLE FONT                               -->
+        <!-- ----------------------------------------------------------------------- -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                  TITLE                                  -->
+        <!-- ----------------------------------------------------------------------- -->
+        <title>Bookmark</title>
+    </head>
+    <body>
+        
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                            BOOKMARK SECTION                             -->
+        <!-- ----------------------------------------------------------------------- -->
+        <div class="book" id="book">
+            <div class="container">
+                <div class="book-mark d-flex flex-column justify-content-center align-items-center pt-3">
+                    <h1 class="text-center pt-5">Bookmarker</h1>
+                    <div class="book-zone col-md-8 col-sm-6 d-flex justify-content-center align-items-center mb-3">
+                        <i class="fa-solid fa-bookmark fa-xl mt-3" style="color: #3da55b;"></i>
+                        <h2 class="mt-4 fw-bold fs-4 mx-2 ">Bookmark Your Favorite Sites</h2>
+                        <i class="fa-solid fa-bookmark fa-xl mt-3" style="color: #b5ac49;"></i>
+                    </div>
+                </div>
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                              FORM SECTION                               -->
+                <!-- ----------------------------------------------------------------------- -->
+                <div class="form mt-3">
+                    <div class="sitename start-0 d-flex align-items-center">
+                        <i class="fa-solid fa-book-bookmark fa-md mx-2 mb-1" style="color: #01060e;"></i>
+                        <h4 class="fs-6 fw-bold">Site Name</h4>
+                    </div>
+                    <input class=" form-control mt-2 rounded rounded-3" id="bookMarkText" type="text" placeholder="Bookmark Name">
+    
+                    <div class="sitename start-0 d-flex align-items-center mt-4">
+                        <i class="fa-solid fa-link fa-md mx-2 mb-1" style="color: #04070b;"></i>
+                        <h4 class="fs-6 fw-bold">Site URL</h4>
+                    </div>
+                    <input class="form-control mt-2" id="bookMarkUrl" type="url" placeholder="Website URL">
+                    <button onclick="submitBtn()" class="btn-book btn mt-4 px-5" id="btnSubmit">Submit</button>
+                    <div class="form-zone"></div>
+                </div>
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                             .TABLE SECTION                              -->
+                <!-- ----------------------------------------------------------------------- -->
+                <table class="table mt-4 text-center bg-light">
+                    <thead>
+                        <tr>
+                            <th class="text-capitalize">index</th>
+                            <th class="text-capitalize">Website Name</th>
+                            <th class="text-capitalize">Visit</th>
+                            <th class="text-capitalize">Delete</th>
+                        </tr>
+                    </thead>
+                    <div class="index-zone"></div>
+                    <tbody id="tBody">
+                        <tr>
+                            <td>1</td>
+                            <td></td>              
+                            <td>
+                                <button onclick="visitbook();" class="btn visit" >
+                                    <i class="fa-solid fa-eye fa-sm"></i>
+                                    Visit
+                                </button>
+                            </td>
+                            <td>
+                                <button onclick="deleteBook();" class="btn delete pe-2">
+                                    <i class="fa-solid fa-trash-can fa-sm"></i>
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>                                                                                        
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>

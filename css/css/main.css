@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
+.navbar{ 
+    opacity: 60%;
+}
+.navbar li a {
+    transition-duration: 3s;
+    transition: 4s;
+}
+.navbar li:hover::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    bottom: 0px all;
+    text-align: center;
+}
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */ 
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url(../imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header h3::after{
+    content: "|";
+    animation-name: animation-content;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation-content {
+    0% {
+        content: "|";
+    }
+
+    2% {
+        content: "D|";
+    }
+
+    4% {
+        content: "De|";
+    }
+
+    6% {
+        content: "Des|";
+    }
+
+    8% {
+        content: "Desi|";
+    }
+
+    10% {
+        content: "Desig|";
+    }
+
+    12% {
+        content: "Design|";
+    }
+
+    14% {
+        content: "Designe|";
+    }
+
+    16% {
+        content: "Designer|";
+    }
+
+    18% {
+        content: "|Designer|";
+    }
+
+    20% {
+        content: "|Designe";
+    }
+
+    22% {
+        content: "|Design";
+    }
+
+    24% {
+        content: "|Desig";
+    }
+
+    26% {
+        content: "|Desi";
+    }
+
+    28% {
+        content: "|Des";
+    }
+
+    30% {
+        content: "|De";
+    }
+
+    32% {
+        content: "|D";
+    }
+    36% {
+        content: "|";
+    }
+
+    38% {
+        content: "D|";
+    }
+
+    40% {
+        content: "De|";
+    }
+
+    42% {
+        content: "Dev|";
+    }
+
+    42% {
+        content: "Deve|";
+    }
+
+    44% {
+        content: "Develo|";
+    }
+
+    46% {
+        content: "Develope|";
+    }
+
+    48% {
+        content: "Developer|";
+    }
+    50% {
+        content: "Develope|";
+    }
+
+    52% {
+        content: "Develop|";
+    }
+
+    54% {
+        content: "Develo|";
+    }
+
+    56% {
+        content: "Devel|";
+    }
+
+    58% {
+        content: "Deve|";
+    }
+
+    60% {
+        content: "Dev|";
+    }
+
+    62% {
+        content: "De|";
+    }
+
+    64% {
+        content: "D|";
+    }
+
+    66% {
+        content: "|";
+    }
+    68% {
+        content: "L|";
+    }
+
+    72% {
+        content: "La|";
+    }
+
+    74% {
+        content: "Lar|";
+    }
+
+    76% {
+        content: "Larr|";
+    }
+
+    78% {
+        content: "Larry|";
+    }
+
+    80% {
+        content: "Larry |";
+    }
+
+    82% {
+        content: "Larry D|";
+    }
+
+    84% {
+        content: "Larry Da|";
+    }
+
+    86% {
+        content: "Larry Dan|";
+    }
+
+    88% {
+        content: "Larry Dani|";
+    }
+
+    90% {
+        content: "Larry Danie|";
+    }
+
+    92% {
+        content: "Larry Daniel|";
+    }
+
+    94% {
+        content: "Larry Daniels|";
+    }
+
+    96% {
+        content: "Larry Daniels|";
+    }
+    98% {
+        content: "Larry Daniel|";
+    }
+    100% {
+        content: "Larry Danie|";
+    }
+    101% {
+        content: "Larry Dani|";
+    }
+    102% {
+        content: "Larry Dan|";
+    }
+    104% {
+        content: "Larry Da|";
+    }
+    106% {
+        content: "Larry D|";
+    }
+    106% {
+        content: "Larry |";
+    }
+    108% {
+        content: "Larry|";
+    }
+    110% {
+        content: "Larr|";
+    }
+    112% {
+        content: "Lar|";
+    }
+    114% {
+        content: "La|";
+    }
+    118% {
+        content: "L|";
+    }
+    110% {
+        content: "|";
+    }
+}
+
+header .header-icons i {
+    position:relative;
+    width:40px;
+    height:30px;
+    text-align:center;
+    background-color:rgba(0,0,0,0.4);
+    border-radius: 50%;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                about section                               */
+/* -------------------------------------------------------------------------- */
+.about .about-bg img{
+    position: relative;
+}
+.about .about-bg::before{
+    content: "";
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    width:30%;
+    height: 85%;
+    margin-top: 8%;
+    margin-left: 4%;
+    top: 100%;
+    left:0 ;
+    bottom:0px;
+    z-index: ;
+}
+.about-content h1 {
+    font-family: "Montserrat" sans-serif;
+    font-optical-sizing: auto;
+    font-weight: ;
+    font-style: normal;
+}
+/* -------------------------------------------------------------------------- */
+/*                                  PROGRESS                                  */
+/* -------------------------------------------------------------------------- */
+.progress{
+    height: 20px;
+}
+.progress h5{
+    font-size: x-small;
+}
+/* -------------------------------------------------------------------------- */
+/*                                   BUTTONS                                  */
+/* -------------------------------------------------------------------------- */
+.about-buttons .close-1{
+    position: relative;
+    background-color: black;
+    color: #fff;
+    transition: 1s ;
+    border: 1px solid black;
+}
+.about-buttons .close-1:hover{
+    background-color: white;
+    color: black;
+}
+.about-buttons .close-2{
+    position: relative;
+    background-color:white;
+    color:black;
+    transition: 1s ;
+    border: 1px solid black;
+}
+.about-buttons .close-2:hover{
+    background-color: black;
+    color: white;
+}
+/* -------------------------------------------------------------------------- */
+/*                                  SERVICES                                  */
+/* -------------------------------------------------------------------------- */
+.services{
+    background-color: #f5f5f5;
+}
+.serv-title h1::before{
+    content: "SERVICES";
+    width: 17%;
+    height: 50px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+}
+.serv-card i{
+    background-color: rgba(0,0,0,0.1);
+}
+.serv-card .fa-solid{
+    margin-left: 36%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    transition: .8s;
+}
+
+.serv-card:hover i{
+    background-color:rgba(0,0,0,0.7);
+    color: #fff;
+}
+/*  -----------                PORTFOLIO                 -----------  */
+.portfolio{
+    position: relative;
+}
+.port-title h1::before{
+    content: "Portfolio.";
+    width: 17%;
+    height: 50px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+}
+.nav-item {
+    transition-duration: 3s;
+    transition: 4s;
+    position: relative;
+}
+.nav-item:hover::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color:black;
+    left: 14px;
+}
+.port-inner:hover .layer{
+    opacity: 1;
+    top: 5px;
+    left: 5px;
+    right: 7px;
+    bottom: 5px;
+    background-color: rgba(250, 244, 244, 1);
+    transition: 0.8s;;
+}
+.inner-layer i:hover{
+    background-color: #fff;
+}
+.port-inner img{
+    transition: .8s;
+}
+.port-inner:hover img {
+    scale: 1.1;
+}
+/* -------------------------------------------------------------------------- */
+/*                                   client                                  */
+/* -------------------------------------------------------------------------- */
+.client{
+    position: relative;
+    background-color:whitesmoke;
+}
+.client-title h1::before{
+    content: "Testimonials.";
+    width: 17%;
+    height: 50px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+}
+.carousel-item img{
+    width: 80px;
+    height: 80px;
+}
+/* -------------------------------------------------------------------------- */
+/*                                  our team                                  */
+/* -------------------------------------------------------------------------- */
+.team{
+    position: relative;
+    background-color:whitesmoke;
+}
+.team-title h1::before{
+    content: "OUR TEAM";
+    width: 17%;
+    height: 50px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+}
+.card-body {
+    background-color: rgb(82, 81, 81);
+}
+/* -------------------------------------------------------------------------- */
+/*                                   CONTACT                                  */
+/* -------------------------------------------------------------------------- */
+.contact{
+    position: relative;
+    background-color:whitesmoke;
+}
+.cont-title h1::before{
+    content: "Contact Us";
+    width: 17%;
+    height: 50px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   MESSAGE                                  */
+/* -------------------------------------------------------------------------- */
+.icon i{
+    background-color: rgb(231, 230, 230);
+}
+.icon .fa-solid{
+    margin-left: 36%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    transition: .8s;
+}
+i:hover {
+    background-color:rgba(0,0,0,0.7);
+    color: #fff;
+}
+.text .form-name {
+    width: 45%;
+    background-color: rgb(231, 230, 230);
+    border: 0;
+
+}
+.text .form-email{
+    width: 50%;
+    background-color: rgb(231, 230, 230);
+    border: 0;
+}
+.text .form-subject{
+    width: 100%;
+    background-color: rgb(231, 230, 230);
+    border: 0;
+}
+.text .form-message{
+    width: 100%;
+    background-color: rgb(231, 230, 230);
+    border: 0;
+}
+
